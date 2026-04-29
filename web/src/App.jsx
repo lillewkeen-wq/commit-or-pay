@@ -7,9 +7,9 @@ function App() {
     const tg = window.Telegram.WebApp
     tg.expand()
 
-    const u = tg.initDataUnsafe?.user
+    const u = tg.initDataUnsafe.user
 
-    fetch('https://commit-or-pay.vercel.app/api/me', {
+    fetch('/me', {
       method:'POST',
       headers:{'Content-Type':'application/json'},
       body:JSON.stringify({user:u})
@@ -22,7 +22,7 @@ function App() {
     const text = prompt('Задача')
     const amount = prompt('Сумма')
 
-    await fetch('https://commit-or-pay.vercel.app/api/duel', {
+    await fetch('/duel', {
       method:'POST',
       headers:{'Content-Type':'application/json'},
       body:JSON.stringify({
@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div style={{padding:20}}>
-      <h1>🔥 Commit or Pay</h1>
+      <h1>Commit or Pay 🔥</h1>
 
       {user && (
         <>
