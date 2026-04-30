@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+.app {
+  padding: 16px;
+}
+
+.title {
+  text-align: center;
+}
+
+.title span {
+  color: #a855f7;
+}
+
+.card {
+  background: #1e293b;
+  padding: 16px;
+  border-radius: 16px;
+  margin-top: 16px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: #a855f7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar.big {
+  width: 60px;
+  height: 60px;
+}
+
+.balance {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, purple, violet);
+  color: white;
+}
+
+.nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  background: #020617;
+  padding: 10px;
+}
